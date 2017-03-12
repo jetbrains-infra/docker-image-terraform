@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 ARG TERRAFORM_VERSION=0.8.7
 ARG VMWARE_VERSION=1.1
-ARG KAPACITOR_VERSION=0.1
+ARG KAPACITOR_VERSION=0.2
 
 RUN apk update && \
     apk add ca-certificates wget git && \
