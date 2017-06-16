@@ -1,5 +1,6 @@
 # Docker Image for Terraform 
 
 Includes:
-- [VMware vSphere provider](https://github.com/mkuzmin/terraform-vsphere/)
+- Patched [AWS provider](https://github.com/jetbrains-infra/terraform-provider-aws/)
+- [VMware vSphere provider](https://github.com/mkuzmin/terraform-provider-vmware/)
 - [Kapacitor provider](https://github.com/mkuzmin/terraform-provider-kapacitor/)
