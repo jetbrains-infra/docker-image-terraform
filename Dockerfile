@@ -16,3 +16,11 @@ RUN apk update && \
     chmod +x /usr/local/bin/terraform-provider-*
 
 ENTRYPOINT ["terraform"]
+
+ARG BUILD_DATE
+ARG VCS_REF
+
+LABEL org.label-schema.build-date=$BUILD_DATE \
+    org.label-schema.vcs-url="https://github.com/jetbrains-infra/docker-image-terraform.git" \
+    org.label-schema.vcs-ref=$VCS_REF \
+    org.label-schema.schema-version="1.0"
